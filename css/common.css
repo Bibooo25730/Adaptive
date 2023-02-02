@@ -1,0 +1,152 @@
+*,*:before,*:after{ -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+body{ width: 100%;height: 100%; margin:0;padding:0;color:#555555;font-family:-apple-system,BlinkMacSystemFont,"PingFang-SC-Regular","Microsoft YaHei","Source Han Sans SC",Arial,sans-serif;font-size:12px;overflow-x:hidden;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+ol,ul{list-style:none}
+select{ border: none;background-color: transparent; color: #ffffff;}
+/* 设置 a标签 默认颜色 */
+a,a:link{text-decoration:none;color:#ffffff;-webkit-tap-highlight-color:transparent;}
+a:active,a:hover{outline:0;color:#FF0000 !important;text-decoration:none;}
+/* 设置 过渡 */
+.trans,.trans *{transition:all .5s ease}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+.ac{text-align:center!important}
+.fl{float:left}
+.fr{float:right!important}
+.clearfix:after{ content: "020"; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { /* 触发 hasLayout */ zoom: 1; }
+/* 字体过长 */
+.ep1{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ep2{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+/* layout */
+.wp{max-width:1200px;margin-left:auto;margin-right:auto;}
+img{max-width:100%;height:autoo;object-fit: cover;}
+/* 往上 */
+.transy{transition:.3s;-moz-transition:.3s;-webkit-transition:.3s}
+.transy:hover{transform:translateY(-5px)}
+
+.pic,.bimg{overflow:hidden}
+.biao img,.pic img{transition:.3s;-moz-transition:.3s;-webkit-transition:.3s;cursor:pointer}
+.pic img,.bimg img{width:100%;height:100%;display:block}
+.biao:hover img{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);transform:rotate(360deg)}
+.pic:hover img{-webkit-transform:scale(1.1);transform:scale(1.1);-moz-transform:scale(1.1)}
+.bimg img,.bimg2 img{transition:all 2.6s ease-in 0s}
+.bimg:hover img,.bimg2:hover img{transform:scale(1.09)!important}
+.pimg:hover{transform:scale(1.09)!important}
+.pimg{height:100%;width:100%;transition:all 2.6s ease-in 0s}
+
+/* flex */
+
+.x,.x0,.x1,.x2,.x3,.x4,.x5,.x6,.x7,.x8,.x9,.x10,.x11,.x12,.xl1,.xl2,.xl3,.xl4,.xl5,.xl6,.xl7,.xl8,.xl9,.xl10,.xl11,.xl12,.xs0,.xs1,.xs2,.xs3,.xs4,.xs5,.xs6,.xs7,.xs8,.xs9,.xs10,.xs11,.xs12,.xm0,.xm1,.xm2,.xm3,.xm4,.xm5,.xm6,.xm7,.xm8,.xm9,.xm10,.xm11,.xm12,.xb0,.xb1,.xb2,.xb3,.xb4,.xb5,.xb6,.xb7,.xb8,.xb9,.xb10,.xb11,.xb12,.xg0,.xg1,.xg2,.xg3,.xg4,.xg5,.xg6,.xg7,.xg8,.xg9,.xg10,.xg11,.xg12{position:relative;width:100%}
+.x{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}
+.x0,.xl0,.xs0,.xm0,.xb0,.xg0{max-width:100%}
+.x0{width:auto}
+.x1{width:8.33333333%}
+.x2{width:16.66666667%}
+.x20{width:20%}
+.x3{width:25%}
+.x4{width:33.33333333%}
+.x5{width:41.66666667%}
+.x6{width:50%}
+.x7{width:58.33333333%}
+.x8{width:66.66666667%}
+.x9{width:75%}
+.x10{width:83.33333333%}
+.x11{width:91.66666667%}
+.x12{width:100%}
+
+.y,.y1,.y2,.y20,.y3,.y4,.y5,.y6,.y7,.y8,.y9,.y10,.y11,.y12{position:relative;max-height:100%}
+.y{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1}
+.y0{height:auto}
+.y1{height:8.33333333%}
+.y2{height:16.66666667%}
+.y20{height:20%}
+.y3{height:25%}
+.y4{height:33.33333333%}
+.y5{height:41.66666667%}
+.y6{height:50%}
+.y7{height:58.33333333%}
+.y8{height:66.66666667%}
+.y9{height:75%}
+.y10{height:83.33333333%}
+.y11{height:91.66666667%}
+.y12{height:100%}
+
+
+.flex{display:flex;display:-ms-flexbox;display:-webkit-flex;display:-moz-flex}
+.flex-column{flex-direction:column}
+.flex-column .flex-reverse{flex-direction:column-reverse}
+.flex-wrap{flex-wrap:wrap}
+.flex-center{justify-content:center}
+.flex-end{justify-content:flex-end}
+.flex-bet{justify-content:space-between}
+.flex-items{align-items:center}
+
+@media(min-width:572px){
+    .container{max-width:540px;margin: 0 auto;}
+  
+}
+
+@media(min-width:762px){
+    .container{max-width:730px;margin: 0 auto;}
+    
+}
+
+@media(min-width:992px){
+    .container{max-width:960px;margin: 0 auto;}
+   
+}
+
+@media(min-width:1232px){
+    .container{max-width:1200px;padding-left:0!important;padding-right:0!important}
+}
+    @media(min-width:1632px){
+    .container{max-width:1274px;margin: 0 auto;}
+}
+
+.show,.hidden-xl,.hidden-xs,.hidden-xm,.hidden-xb,.hidden-xg{display:block!important}
+.hidden,.show-xl,.show-xs,.show-xm,.show-xb,.show-xg{display:none!important}
+
+@media(max-width:760px){
+    .show-xl{display:block!important}
+    .hidden-xl{display:none!important}
+}
+    @media(min-width:762px) and (max-width:992px){
+    .show-xs{display:block!important}
+    .hidden-xs{display:none!important}
+}
+    @media(min-width:993px) and (max-width:1200px){
+    .show-xm{display:block!important}
+    .hidden-xm{display:none!important}
+}
+    @media(min-width:1201px) and (max-width:1631px){
+    .show-xb{display:block!important}
+    .hidden-xb{display:none!important}
+}
+    @media(min-width:1632px){
+    .show-xg{display:block!important}
+    .hidden-xg{display:none!important}
+}
+
+.red{color:#FF0000}
+.barContainer {display: none !important; width: 50px; height: 50px; background-color: transparent; border: 1px solid #1FDAF6; position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; transform: scale(0.8); border-radius: 50%; position: relative; z-index: 1;}
+.barContainer::after {content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 50%; animation: option_scale 2s ease infinite; border: 1px solid #1FDAF6;}
+.barContainer .active::before {top: 0px;}
+.barContainer .active::after{bottom: 0px;}
+
+.bar{height: 2px;width: 30px;position: relative;background-color: #1FDAF6;z-index: -1;}
+.bar::after,.bar::before{ content: ""; position: absolute; left: 0; width: 100%; height: 100%; background-color: #1FDAF6; transition: .3s ease; transition-property: bottom,top; }
+.bar::after{bottom: 8px;}
+.bar::before{top: 8px;}
+
+@keyframes option_scale  {
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1.3);
+    }
+} 
+
